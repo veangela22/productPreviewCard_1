@@ -93,9 +93,35 @@ button:hover {
     background-color: rgb(24, 24, 134);
 }
 
-/* .cartButton img {
-    align-items: center;
-} */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+        display: block;
+        margin-right: 50px;
+    }
+
+    .product {
+        width: 300px;
+        height: 500px;
+    }
+
+    .product img {
+        border-radius: 5px;
+    }
+
+    .productContent {
+        width: 330px;
+        height: 600px;
+        border-radius: 5px;
+    }
+
+    .prices {
+        flex-direction: column;
+        text-align: center;
+        display: block;
+    }
+}
 
 .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
